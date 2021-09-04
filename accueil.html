@@ -1,0 +1,132 @@
+<html>
+    <head>
+       <Meta charset = "UTF-8">
+        <style>
+body{
+    background-image: url(photo.PNG);
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position:center center;
+            }
+#menu ul{
+        padding-left:500px;
+}
+#menu{
+    background-color:rgb(0,128,192);
+    height: 70px;
+    }
+#menu ul li{  
+            width:150px;
+            position:relative;
+            float:left;
+            list-style:none;
+            padding-top:10px;
+}
+#menu ul li a{
+              text-align:center;
+              font-size:20px;
+              list-style:none;
+              text-decoration:none;
+              color:white;
+              line-height:8px;
+}
+            .container {
+            width: 350px;
+            margin-left: 600px;
+            margin-top: 100px;
+            margin-bottom: 20;
+            padding-top:50px;
+            padding-left:50px;
+            padding-right:50px;
+            padding-bottom:50px;
+            color: #333;
+            border: 1px solid black;         
+        }
+        .container p {
+            font-family: sans-serif;
+            margin:0;
+        }
+        .myform {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        .myform label {
+            display: block;
+            margin-bottom: 2px;
+            margin-left: 5px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .champ {
+            margin-bottom: 20px;
+    
+        }
+        .champ input {   
+            border-color: black;
+            height: 35px;
+            width: 100%;
+            padding: 0 10px;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex div {
+            width: 100%;
+        }
+        .flex input {
+            width: 100%;
+        }
+        .button {
+            text-align: right;
+        }
+        .valid {
+            border: none;
+            background: none;
+            font-size: 14px;
+            padding: 10px 30px;
+            border-radius: 3px;
+            color: #fff;
+            background-color: cornflowerblue;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <form  name="pro">
+    <div id="menu">
+     <ul>
+          <li> <a href="accueil.php"> <pre> <b>Accueil</b></pre></a></li>
+          <li> <a href="inscription.html"> <pre> <b>Inscription</b></pre></a></li>
+         
+   <br />       
+   <br />  
+    </ul>
+   </div>
+         
+          </form>  
+        </header>
+        <article>
+            <div class="container">
+        <p> <b>Connectez-vous a votre compte ?</b></p>
+        <form action="depconfig.php" method="POST" class="myform" id="myform">
+            <div class="champ">
+                <label for="mail">E-Mail</label>
+                <input type="email" name="mail" id="mail" required placeholder="Numero de mobile ou e-mail">
+            </div>
+            <div class="champ flex">
+                <div>
+                    <label for="pw">Mot de passe</label>
+                    <input type="password" name="pw" id="pw" required placeholder="Nouveau mot de passe">
+                </div>
+            </div>
+            <div class="champ button">
+                <button type="submit" class="valid" name=""> Se connecter </button>
+            </div>
+        </form>
+    </div>
+        </article>
+    </body>
+</html>
